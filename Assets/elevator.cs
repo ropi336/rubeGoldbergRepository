@@ -9,6 +9,7 @@ public class elevator : MonoBehaviour {
     public Vector3 startpos;
     public Vector3 endpos;
     public bool istouch;
+    public static float ypos;
 
     public GameObject Falling_Hazard;
     // Use this for initialization
@@ -16,7 +17,7 @@ public class elevator : MonoBehaviour {
     { }
 	// Update is called once per frame
 	void Update () {
-
+        ypos = gameObject.transform.position.y; 
     }
     
 

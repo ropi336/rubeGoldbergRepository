@@ -6,21 +6,11 @@ public class ballBehaviour : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
+        //gameObject.SetActive(false);
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		
 	}
-
-    void OnCollisionStay(Collision col)
-    {
-
-        if (col.gameObject.name == ("Capsule"))
-        {
-            transform.Translate(Vector3.forward * 0.2f);
-        }
-
-    }
 }

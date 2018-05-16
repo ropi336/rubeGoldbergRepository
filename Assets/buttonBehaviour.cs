@@ -16,9 +16,9 @@ public class buttonBehaviour : MonoBehaviour {
     void OnCollisionStay(Collision col)
     {
 
-        if (col.gameObject.name == ("button_ss"))
+        if (col.gameObject.name == ("domino_final"))
         {
-            touched = true;
+            gameObject.GetComponent<Renderer>().material.color = Color.red;
         }
 
     }
