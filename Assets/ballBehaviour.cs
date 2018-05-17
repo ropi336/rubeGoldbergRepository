@@ -13,4 +13,11 @@ public class ballBehaviour : MonoBehaviour {
 	void Update () {
 		
 	}
+    void OnCollisionEnter(Collision col)
+    {
+        if (col.gameObject.name == ("Hammer_2"))
+        {
+            goldenBallCamera.cameraTarget = 1;
+        }
+    }
 }

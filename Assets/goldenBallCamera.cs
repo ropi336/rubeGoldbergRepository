@@ -7,7 +7,7 @@ public class goldenBallCamera : MonoBehaviour
 {
 
     public GameObject player;       //Public variable to store a reference to the player game object
-
+    public static int cameraTarget = 0;
 
     private Vector3 offset;         //Private variable to store the offset distance between the player and camera
 
@@ -25,11 +25,40 @@ public class goldenBallCamera : MonoBehaviour
         transform.position = player.transform.position + offset;
     }
 
-    void OnCollisionEnter(Collision col)
+    private void Update()
     {
+        switch (cameraTarget) {
+            case 0:
+                {
+                    player = GameObject.Find("ball 1"); break;
+                }
 
-       
+            case 1:
+                {
+                    player = GameObject.Find("Hammer_2"); break;
+                }
+
+            case 2:
+                {
+                    player = GameObject.Find("Hammer_3"); break;
+                }
+
+            case 3:
+                {
+                    player = GameObject.Find("Hammer_4"); break;
+                }
+
+            case 4:
+                {
+                    player = GameObject.Find("Hammer_5"); break;
+                }
+
+            case 5:
+                {
+                    player = GameObject.Find("ball 2"); break;
+                }
+
+        }
     }
-                
 
 }
