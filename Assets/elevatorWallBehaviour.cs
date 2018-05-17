@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class elevatorWallBehaviour : MonoBehaviour {
     public Rigidbody rb;
+
     // Use this for initialization
     void Start () {
 		
@@ -18,4 +19,7 @@ public class elevatorWallBehaviour : MonoBehaviour {
 
         }
     }
+
 }
+
+
