@@ -13,7 +13,7 @@ public class elevator : MonoBehaviour {
     public GameObject Falling_Hazard;
     // Use this for initialization
     void Start ()
-    { }
+    { height = false; }
 	// Update is called once per frame
 	void Update () {
         ypos = gameObject.transform.position.y;

@@ -58,6 +58,20 @@ public class goldenBallCamera : MonoBehaviour
                     player = GameObject.Find("ball 2"); break;
                 }
 
+            case 6:
+                {
+                    player = GameObject.Find("camera_tracker"); break;
+                }
+
+            case 7:
+                {
+                    player = GameObject.Find("ball 3"); break;
+                }
+            case 8:
+                {
+                    player = GameObject.Find("camera_endmenu"); break;
+                }
+
         }
     }
 
