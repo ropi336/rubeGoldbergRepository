@@ -31,7 +31,7 @@ public class elevator2 : MonoBehaviour
     }
     void OnCollisionStay(Collision col)
     {
-        if (col.gameObject.name == ("ball 2") && (speed < 0.3f))
+        if (col.gameObject.name == ("ball 2") && (speed < 0.2f))
         {
             speed += 0.002f;
         }
